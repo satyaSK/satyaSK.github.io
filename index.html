@@ -10,6 +10,7 @@
 	<link href="css/resume.css" rel="stylesheet">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139252776-1"></script>
+	<script src="scramble.js"></script><!--scramble script-->
 	<meta charset="UTF-8">
 	<meta name="description" content="This is my personal portfolio website. Its the website version of my resume. This is just the first draft and I am definitely going to change the entire look of it">
 	<meta name="keywords" content="resume,portfolio,curriculum,vitae,cv,satyajit,kamble,website,github pages">
@@ -64,6 +65,7 @@
         <div class="subheading mb-5">Masters's Student At the Oregon State University
           <a href="resume/resume.pdf" target="_blank"> [Printable Resume PDF]</a>
         </div>
+		<div class="lead mb-3">Email: <span class="text-primary" id="email">satyajit[DOT]k[AT]somaiya[DOT]edu</span></div>
         <p class="lead mb-3">My research interest lies in Computational Linguistics and Probabilistic Programming. I like to work within the NLP subdomain of building word representations, abstractive text summarization and creating generative models for text generation. I am transitioning towards creating software applications for user consumption.</p>
         <p class="lead mb-5">
 		<a href="https://arxiv.org/abs/1811.05145" target="_blank">My first paper</a>, in collaboration with <a href="https://scholar.google.com/citations?user=SbYRrvgAAAAJ&hl=en" target="_blank">Dr Aditya Joshi</a>, was selected for oral presentation at the 15th International Conference on NLP (ICON 2018). Also, I create videos occassionaly, some of which are uploaded on youtube.
@@ -290,8 +292,8 @@
     	<div class="w-100">
     		<h2 class="mb-5">Contact Information</h2>
     	 	<div class="lead mb-3"><h4>Mailing address: <span class="text-primary">501, Shanta Kunj Bldg, Beside Suyog Society, Mulund East, Mumbai 400081</span></h4></div>
-    	 	<div class="lead mb-3"><h4>Email: <span class="text-primary">satyajit[DOT]k[AT]somaiya[DOT]edu</span></h4></div>
-    	 	<div class="lead mb-3"><h4>Phone: <span class="text-primary">+91-9757220499</span></h4></div>
+    	 	<div class="lead mb-3"><h4>Email: <span class="text-primary" id="email2">satyajit[DOT]k[AT]somaiya[DOT]edu</span></h4></div>
+    	 	<div class="lead mb-3"><h4>Phone: <span class="text-primary" id="phone">+91-9757220499</span></h4></div>
     	</div>
     </section>
 
@@ -309,6 +311,19 @@
 
 
 </body>
+<script>
+		emailScramble = new scrambledString(document.getElementById('email'),
+		    'emailScramble', 'satyajit.k@somaiya.edu',
+		    [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]);
+			
+		phoneScramble = new scrambledString(document.getElementById('phone'),
+		    'phoneScramble', '+91-9757220499',
+		    [1,2,3,4,5,6,7,8,9,10,11,12,13,14]);
+			
+		emailScramble2 = new scrambledString(document.getElementById('email2'),
+		    'emailScramble2', 'satyajit.k@somaiya.edu',
+		    [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]);
+</script>
 </html>
 
 
