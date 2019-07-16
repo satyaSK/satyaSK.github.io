@@ -11,6 +11,8 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139252776-1"></script>
 	<script src="scramble.js"></script><!--scramble script-->
+  <script type="text/javascript" src="typewriter.js" content-type= "application/javascript;charset=utf-8">
+  </script>
 	<meta charset="UTF-8">
 	<meta name="description" content="This is my personal portfolio website. Its the website version of my resume. This is just the first draft and I am definitely going to change the entire look of it">
 	<meta name="keywords" content="resume,portfolio,curriculum,vitae,cv,satyajit,kamble,website,github pages">
@@ -25,51 +27,61 @@
 	</script>
 </head>
 <body>
-	
-  	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-	    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-	      <span class="d-block d-lg-none">Satyajit Kamble</span>
-	      <span class="d-none d-lg-block">
-	        <img class="img-fluid img-profile rounded-circle mx-auto mb-1" src="img/satya.jpg" alt="">
-	      </span>
-	    </a>
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav">
-	        <li class="nav-item">
-	          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-	        </li>
-	      </ul>
-	    </div>
-	</nav>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Satyajit Kamble</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-1" src="img/satya.jpg" alt style = "width: 170px">
+        </span>
+      </a>
+      <div class = "satya mb-3" id="app"></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
-        <h1 class="mb-0">Satyajit
-          <span  class="text-primary">Kamble</span>
+        
+        <h1 class="mb-0" id="firstname">Satyajit
+          <span  class="text-primary" id="lastname">Kamble</span>
         </h1>
         <div class="subheading mb-5">Masters's Student At the Oregon State University
-          <a target="_blank" href="resume.pdf"> [Printable Resume PDF]</a>
+          <a href="resume/resume.pdf" target="_blank">Printable Resume PDF</a>
         </div>
-		<div class="lead mb-3">Email: <span class="text-primary" id="email">satyajit[DOT]k[AT]somaiya[DOT]edu</span></div>
-        <p class="lead mb-3">My research interest lies in Computational Linguistics and Probabilistic Programming. I like to work within the NLP subdomain of building word representations, abstractive text summarization and creating generative models for text generation. I am transitioning towards creating software applications for user consumption.</p>
-        <p class="lead mb-5">
-		<a href="https://arxiv.org/abs/1811.05145" target="_blank">My first paper</a>, in collaboration with <a href="https://scholar.google.com/citations?user=SbYRrvgAAAAJ&hl=en" target="_blank">Dr Aditya Joshi</a>, was selected for oral presentation at the 15th International Conference on NLP (ICON 2018). Also, I create videos occassionaly, some of which are uploaded on youtube.
-		</p>
+    <div class="lead mb-3"><b>Email:</b> <span class="text-primary" id="email"></span></div>
+        
+        <p class="lead mb-3">I am a master’s student majoring in Computer Science at OSU. I’m a curious programmer who absolutely loves to play with data. Out of fun, I have been building various projects in the domain of deep learning, machine learning and have also been fortunate enough to have worked on a research project in NLP with <strong><a href="https://scholar.google.com/citations?user=SbYRrvgAAAAJ&hl=en" target="_blank">Dr. Aditya Joshi</a></strong>. I really admire the fact that analysing  data on varying scales is capable of creating a huge impact within societies and businesses.</p>
+        <p class="lead mb-4">
+    My learning caps are always on! I also enjoy coding and writing scripts like my most recent one to <strong><a href="#" target="_blank">Scrape Linkedin </a></strong>profiles and discover top companies (based on ELO score) and get position details for a better shot at good internships. I founded and lead the Somaiya Machine Learning Group (SMLG) at my undergraduate school, which comprised of 120+ members including students and faculties. Apart from coding and ML, I fool around, watch movies, make videos and trek a lot :-)
+    </p>
+    <p class="lead mb-5">
+    <strong>Here’s my favourite quote:</strong> “Whatever the mind of man can conceive, it can achieve”.
+    </p>
         <div class="social-icons">
           <a href="https://github.com/satyask" target="_blank">
             <i class="fab fa-github"></i>
@@ -77,8 +89,8 @@
           <a href="https://www.linkedin.com/in/satya27/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://www.youtube.com/channel/UCJOaAej6tR-QFX3ptmlETgg?view_as=subscriber" target="_blank">
-            <i class="fab fa-youtube"></i>
+          <a href="https://www.youtube.com/channel/UCJOaAej6tR-QFX3ptmlETgg?view_as=subscriber">
+            <i class="fab fa-youtube" target="_blank"></i>
           </a>
           <a href="https://www.facebook.com/satyajeet.kamble.9" target="_blank">
             <i class="fab fa-facebook-f"></i>
@@ -138,163 +150,225 @@
         </div>
 
       </div>
-	</section> -->
+  </section> -->
 
-	<hr class="m-0">
+  <hr class="m-0">
 
-	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
         <h2 class="mb-5">Education</h2>
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Oregon State University</h3>
-            <div class="subheading mb-3"><span class="text-primary">Masters of Science</span></div>
-            <div>Computer Science</div>
-            <p>GPA: 3.8/4</p>
+            <div class="subheading mb-3"><span class="text-primary">Master's Degree &middot; Majoring in Computer Science &middot; GPA N.A/4</span></div>
+            <!-- <div>Computer Science</div> -->
+            <p>---Courses Yet to Start (last update 07/16/2019)---</p>
         </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Sept 2019 - present</span>
+            <span class="text-primary">Sept 2019 - Present</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">University of Mumbai</h3>
-            <div class="subheading mb-3"><span class="text-primary">Bachelor of Technology</span></div>
-            <div>Computer Science & Engineering</div>
-            <p>CGPA: 7.21/10</p>
+            <div class="subheading mb-3"><span class="text-primary">Bachelor of Technology &middot; Majored in Computer Engineering &middot; CGPA 7.30/10</span></div>
+            <!-- <div>Computer Science & Engineering</div> -->
+            <p>Analysis of Algorithms &middot; Data Structures &middot; Neural Networks and Fuzzy Logic &middot; Machine Learning &middot; Artificial Intelligence &middot; Digital Signal & Image Processing &middot; Object Oriented Programming Methodology &middot; Discrete Structure and graph Theory &middot; Advanced Database Mangement Systems</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">June 2015 - July 2019</span>
+            <span class="text-primary">Jun 2015 - Jul 2019</span>
           </div>
         </div>
     </section>
 
     <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
-      <div class="w-100">
-        <h2 class="mb-5">Projects</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-3">Experience & Research</h2>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Hate Speech Detection in Code-Mixed Tweets </h3>
-            <div class="subheading mb-1"><a href="https://github.com/satyaSK/Hate-Speech-Detection" target="_blank">view github code</a></div>
-            <p>Trained word embeddings with code-mixed domain-speciﬁc tweets. Experimented with a benchmark dataset and used three deep learning models for detecting hate speech. Observed an improved representation of target groups and an improvement of about 12% in F-score over a past work that used statistical classiﬁers.</p>
-          </div>
+            <h3 class="mb-0">Directed Research Collaboaration</h3>
+            <div class="subheading mb-3"><span class="text-primary">Data61, Commonwealth Scientific and Industrial Research Organization (CSIRO)</span></div>
+            <ul>
+            <li class="arrow-alt-circle-right">Collaborated with an NLP researcher on <strong>hate-speech detection from code-mixed data</strong> on social media. Extracted 255k+ domain-specific tweets using REST API and created an algorithm to pre-process the data.</li>
+            <li class="arrow-alt-circle-right">Trained domain-speciﬁc word embeddings to capture semantic subtleties. Designed and implemented <strong>CNN-1d, LSTMs and Bi-LSTMs</strong>. Evaluated their performance against state-of-the-art statistical classifiers.</li>
+            <li class="arrow-alt-circle-right">Results showed a <strong>12% improvement in F-score</strong> on a benchmark dataset. This research project resulted in a paper which got selected at ICON 2018, a <strong>national level A-star NLP conference in India.</strong></li>
+          </ul>
+        </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Jun 2018 - Aug 2018</span>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Seq2seq In-house Chatbot Project </h3>
-            <div class="subheading mb-1"><a href="https://github.com/satyaSK/PyTorch-Chatbot" target="_blank">view github code</a></div>
-            <p>A college in-house project. Created a seq2seq encoder-decoder architecture for a chatbot using Tensorﬂow inspired from the machine translational model. Incorporated an attention mechanism allowing for local context discovery. Currently trying to make further improvements.</p>
+            <h3 class="mb-0">Undergraduate Research Assistant</h3>
+            <div class="subheading mb-3"><span class="text-primary">University of Mumbai</span></div>
+            <ul>
+            <li class="arrow-alt-circle-right"><strong>Led a team of 5</strong> and built a question answering chatbot for a given dataset. Developed the <strong>seq2seq encoder-decoder architecture</strong> to learn context vectors from training data. </li>
+            <li class="arrow-alt-circle-right">Improved performance by incorporating the <strong>global attention mechanism</strong> to allow for refined context discovery.</li>
+          </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary"> Dec 2017 - Present</span>
+            <span class="text-primary">Aug 2017 - Oct 2017</span>
+          </div>
+        </div>
+    </section>
+
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-3">Projects</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-0">LinkedIn Profile Scraping</h3>
+            <div class="subheading mb-1"><a href="https://github.com/satyaSK/Scraping-Linkedin" target="_blank">view tutorial</a></div>
+            <ul>
+            <li class="arrow-alt-circle-right">This project was built to <strong>aid students</strong> like myself to allow them to discover unknown companies and their rating (<strong>ranks based on ELO score and Naive score</strong>) with respect to other companies.</li>
+            <li class="arrow-alt-circle-right">Student and internship/job data is extracted to allow students to <strong>easily search company roles/positions and their associated responsibilities</strong>, allowing students to save valuable time.</li>
+          </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Jun 2019</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
-            <h3 class="mb-0">Skip-gram Model for Word2Vec </h3>
-            <div class="subheading mb-1"><a href="https://github.com/satyaSK/SkipGram-Model" target="_blank">view github code and documentation</a></div>
-            <p>Re-implemented the skip-gram model in Tensorﬂow to study word representation and context gathering. Implemented the code for data processing and created sweet word embedding visualizations on Tensorboard. Documented the results and my learnings on Github.</p>
+            <h3 class="mb-0">Skip-gram Model for Word2Vec</h3>
+            <div class="subheading mb-1"><a href="https://github.com/satyaSK/SkipGram-Model" target="_blank">View Github Code</a></div>
+            <ul>
+            <li class="arrow-alt-circle-right"><strong>Led a team of 3</strong> to explore the application of the <strong>CBOW and skip-gram model.</strong></li>
+            <li class="arrow-alt-circle-right">Scraped textual data from the web and <strong>built the skip-gram model</strong>(in tensorflow) to find correlations between movies and TV series along with their characters. Also, <strong>implemented noise contrastive loss.</strong></li>
+          </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Jan 2018 - Feb 2018</span>
+            <span class="text-primary">Jan 2018</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
-            <h3 class="mb-0">LSTM Sequence Counter </h3>
-            <div class="subheading mb-1"><a href="https://github.com/satyaSK/LSTM-Sequence-Counter" target="_blank">view github code and documentation</a></div>
-            <p>Used LSTM cells in Tensorﬂow to calculate the number of 1's in an auto-generated binary element dataset, to study RNN's. Observed an improvement in recall and precision over the typical ANN model. Performed checks for overﬁtting.</p>
+            <h3 class="mb-0">LSTM Stream Sequence Counter  </h3>
+            <div class="subheading mb-1"><a href="https://github.com/satyaSK/LSTM-Sequence-Counter" target="_blank">view github code</a></div>
+            <ul>
+            <li class="arrow-alt-circle-right">A toy project which used <strong>LSTM cells</strong> to calculate the number of 1's in an auto-generated binary element dataset.</li>
+            <li class="arrow-alt-circle-right">The toy code was primarily to explore and understand how the <strong>temporal dynamics</strong> of the dataset with <strong>long sequences</strong> are captured by the modified RNN cells</li>
+          </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Dec 2017 - Jan 2018</span>
+            <span class="text-primary"> Dec 2017</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
-            <h3 class="mb-0">Sentiment Analysis Toy Project</h3>
-            <div class="subheading mb-1"><a href="https://github.com/satyaSK/Sentiment-Analysis" target="_blank">view github code</a></div>
-            <p>Toy project to study sentiment analysis. Detected sentiments in movie reviews. Understood the working of text sequences and experimented with data preprocessing techniques.</p>
+            <h3 class="mb-0">Neural Image Dual-Style Transfer</h3>
+            <div class="subheading mb-1"><a href="https://github.com/satyaSK/DeepLearning-Challenges/tree/master/Style-Art-Generation" target="_blank">view github code</a></div>
+            <ul>
+            <li class="arrow-alt-circle-right">Built a model to transfer the style of 2 images into a third base image. Used the <strong>VGG-16 model</strong> for transfer learning.</li>
+            <li class="arrow-alt-circle-right"><strong>Developed a novel approach</strong> to combine associated style loss and content loss. Also, incorporated regularization.</li>
+          </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Apr 2017 - May 2017</span>
+            <span class="text-primary">Oct 2017</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
-            <h3 class="mb-0">Neural Image Style Transfer</h3>
-            <div class="subheading mb-1"><a href="https://github.com/satyaSK/DeepLearning-Challenges/tree/master/Style-Art-Generation" target="_blank">view github code and documentation</a></div>
-            <p>Created and documented a deep learning model to transfer the style of 2 style images into a single base image. Used Transfer-learning and utilized the VGG-16 model. Studied the functioning of style loss, content loss and also incorporated regularization.
-			</p>
+            <h3 class="mb-3">Sentiment Analysis in Game Reviews</h3>
+            <ul>
+            <li class="arrow-alt-circle-right">Created a model for analyzing sentiments of game reviews using <strong>statistical classifiers</strong> - Random Forests and SVMs. Extracted and utilized several feature vectors such as word n-grams, character n-grams, negation words etc.</li>
+            <li class="arrow-alt-circle-right">Improved task accuracy to 92% by using <strong>ensemble deep learning models</strong> accompanied with <strong>GloVe embeddings.</strong></li>
+          </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Mar 2017 - Apr 2017</span>
+            <span class="text-primary">Jul 2017</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
-            <h3 class="mb-0">Convolutional Network for CIFAR-10 Using Batch Normalization </h3>
-            <div class="subheading mb-1"><a href="https://github.com/satyaSK/Modulated-ConvNet-CIFAR10" target="_blank">view github code and documentation</a></div>
-            <p>Built a ConvNet with batch normalization to classify distorted RGB images in the CIFAR-10 dataset. The primary purpose was to analyze the eﬀect of batch normalization on the inference.</p>
+            <h3 class="mb-0">CNN for CIFAR-10 Using Batch Normalization</h3>
+            <div class="subheading mb-1"><a href="https://github.com/satyaSK/Modulated-ConvNet-CIFAR10" target="_blank">view github code</a></div>
+            <ul>
+            <li class="arrow-alt-circle-right">Built a ConvNet with batch normalization to classify distorted RGB images in the CIFAR-10 dataset. The primary purpose was to analyze the effect of <strong>batch normalization on the inference.</strong></li>
+            <li class="arrow-alt-circle-right">This was a personal project to accompany my understanding when I was a part of a team where we built the <strong>Siamese Network for facial recognition and verification</strong> for an attendance management system.</li>
+          </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Feb 2017 - Mar 2017</span>
+            <span class="text-primary">Jul 2017</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
-            <h3 class="mb-0">Tensorﬂow Workﬂow and documentation</h3>
+            <h3 class="mb-3">Neural Networks for Prediction & Detection</h3>
+            <ul>
+            <li class="arrow-alt-circle-right">Employed NNs for tasks such as:
+          <ul>
+            <li class="angle-right">Created a model for <strong>tracing trends and predicting stock prices</strong> using Gated Recurrent Units (<strong>GRUs</strong>) and Convolutional Neural Networks.</li> <li class="angle-right"><strong>Led a team of 4</strong> for breast tumor detection and classification using <strong>deep-CNNs.</strong></li> <li class="angle-right">Built a toy project which <strong>analyzed facial landmarks</strong> to keep track of blinking.</li>
+          </ul>
+          </li>
+          </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Oct 2017- Mar 2017</span>
+          </div>
+        </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-0">Tensorﬂow Workﬂow</h3>
             <div class="subheading mb-1"><a href="https://github.com/satyaSK/Tensorflow-Workflow" target="_blank">view github code</a></div>
-            <p>Implemented and documented(on Github) various network architectures such as ANN, CNN, LSTM and logistic regression in Tensorﬂow over the basic MNIST dataset for the purpose of self-study.
-			</p>
+            <ul>
+            <li class="arrow-alt-circle-right"><strong>I had founded and lead the Somaiya Machine Learning Group comprising of 120+ members.</strong> The purpose of this project was to serve as a rudimentary introduction to Deep leanring and using the Tensorflow framework.</strong></li>
+            <li class="arrow-alt-circle-right">Implemented and documented(on Github) various network architectures such as <strong>ANN, CNN, LSTM and logistic regression</strong> in Tensorﬂow over the basic MNIST dataset.</li>
+          </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Jan 2017- Feb 2017</span>
+            <span class="text-primary">Feb 2017</span>
           </div>
         </div>
       </div>
-	</section>
+  </section>
 
-	<hr class="m-0">
+  <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
-        <h2 class="mb-2">Technical Skills</h2>
+        <h2 class="mb-2">Skills</h2>
         <ul class="mb-5">
-        <li class="subheading lead mb-2"><h4>Programming Technologies: <span class="text-primary">  Python  &middot;   C++  &middot;   C  &middot;   Java</span></h4></li>
-        <li class="subheading lead mb-2"><h4>Deep Learning Frameworks: <span class="text-primary">  Pytorch  &middot;   Tensorflow</span></h4></li>
-        <li class="subheading lead mb-2"><h4>Tools & Utils: <span class="text-primary">  Numpy  &middot;   NLTK  &middot;   Pandas  &middot; scikit-learn &middot; MATLAB &middot; Git &middot; Github</span></h4></li>
-        <li class="subheading lead mb-2"><h4>Web Technologies: <span class="text-primary">  Javascript  &middot;   NodeJS  &middot;   AngularJS  &middot;  HTML/CSS/SASS  &middot; Bootstrap </span></h4></li>
-    	 </ul>
+        <li class="subheading lead mb-2"><h4>Programming : <span class="text-primary">  Python  &middot;   C++  &middot;   C  &middot; Bash &middot; MATLAB</span></h4></li>
+        <li class="subheading lead mb-2"><h4>Frameworks: <span class="text-primary"> Tensorflow &middot; Pytorch  &middot;  Keras &middot; Scikit-learn</span></h4></li>
+        <li class="subheading lead mb-2"><h4>Databases: <span class="text-primary">SQL &middot; Oracle sql 11g &middot; PostgresSQL &middot; Mysql</span></h4></li>
+        <li class="subheading lead mb-2"><h4>Analytics & Tools: <span class="text-primary">  Numpy  &middot;   NLTK  &middot;   Pandas  &middot; Matplotlib &middot; word2vec &middot; BS4 &middot; Google ANalytics &middot; Tableau &middot; Rapidminer</span></h4></li>
+        <li class="subheading lead mb-2"><h4>Web: <span class="text-primary">  Javascript  &middot;   NodeJS  &middot;   AngularJS  &middot;  HTML/CSS/SASS </span></h4></li>
+        <li class="subheading lead mb-2"><h4>Technologies: <span class="text-primary">Linux &middot;  Latex  &middot; Git &middot;  Rest api </span></h4></li>
+       </ul>
 
-        <h2 class="mb-2">Other Skills</h2>
+        <!-- <h2 class="mb-2">Other Skills</h2>
         <ul class="mb-5">
         <li class="subheading lead mb-2"><h4>Languages: <span class="text-primary">  Able to speak fluent English and Hindi</span></h4></li>
         <li class="subheading lead mb-2"><h4>Media & Design: <span class="text-primary">  Adobe Premiere Pro &middot;  Adobe Premiere Aftereffects &middot; Photoshop</span></h4></li>
-        </ul>
+        </ul> -->
     </div>
     </section>
 
     <hr class="m-0"> 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
-    	<div class="w-100">
-    		<h2 class="mb-5">Contact Information</h2>
-    	 	<div class="lead mb-3"><h4>Mailing address: <span class="text-primary">501, Shanta Kunj Bldg, Beside Suyog Society, Mulund East, Mumbai 400081</span></h4></div>
-    	 	<div class="lead mb-3"><h4>Email: <span class="text-primary" id="email2">satyajit[DOT]k[AT]somaiya[DOT]edu</span></h4></div>
-    	 	<div class="lead mb-3"><h4>Phone: <span class="text-primary" id="phone">+91-9757220499</span></h4></div>
-    	</div>
+      <div class="w-100">
+        <h2 class="mb-5">Contact Info</h2>
+        <div class="lead mb-3"><h4>Mailing address: <span class="text-primary">218 &middot; 21st NW Street &middot; Corvallis &middot; OR 97330</span></h4></div>
+        <div class="lead mb-3"><h4>Email: <span class="text-primary" id="email2">satyajit[DOT]k[AT]somaiya[DOT]edu</span></h4></div>
+        <div class="lead mb-3"><h4>Phone: <span class="text-primary" id="phone">+91-9757220499</span></h4></div>
+      </div>
     </section>
 
 
@@ -310,19 +384,54 @@
 
 
 
+
 </body>
+<script type="text/javascript">
+var app = document.getElementById('app');
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+typewriter.typeString('I am a Coder :)')
+    .pauseFor(800)
+    .deleteAll()
+    .typeString('I Love Data :)')
+    .pauseFor(500)
+    .deleteAll(15)
+    .typeString('I enjoy Challenges!')
+    .pauseFor(200)
+    .deleteChars(11)
+    .typeString('Photography.')
+    .pauseFor(200)
+    .deleteChars(12)
+    .typeString('Filmmaking.')
+    .pauseFor(200)
+    .deleteChars(11)
+    .typeString('Trekking.')
+    .pauseFor(200)
+    .deleteAll()
+    .typeString('And...')
+    .pauseFor(200)
+    .deleteAll()
+    .typeString('some tomfoolery on the side')
+    .pauseFor(1200)
+    .start();
+</script>
+
 <script>
-		emailScramble = new scrambledString(document.getElementById('email'),
-		    'emailScramble', 'satyajit.k@somaiya.edu',
-		    [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]);
-			
-		phoneScramble = new scrambledString(document.getElementById('phone'),
-		    'phoneScramble', '+91-9757220499',
-		    [1,2,3,4,5,6,7,8,9,10,11,12,13,14]);
-			
-		emailScramble2 = new scrambledString(document.getElementById('email2'),
-		    'emailScramble2', 'satyajit.k@somaiya.edu',
-		    [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]);
+    
+    emailScramble = new scrambledString(document.getElementById('email'),
+        'emailScramble', 'kambles@oregonstate.edu',
+        [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]);
+      
+    phoneScramble = new scrambledString(document.getElementById('phone'),
+        'phoneScramble', '+91-9757220499',
+        [1,2,3,4,5,6,7,8,9,10,11,12,13,14]);
+      
+    emailScramble2 = new scrambledString(document.getElementById('email2'),
+        'emailScramble2', 'kambles@oregonstate.edu',
+        [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]);
+
+
 </script>
 </html>
 

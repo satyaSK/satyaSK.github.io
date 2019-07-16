@@ -84,11 +84,25 @@ p.lead {
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
-	font-family: 'Saira Extra Condensed';
-  font-weight: bold;
-  font-size: xx-large;
-  letter-spacing: 0.1rem;
+	font-family: 'Muli';
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
+  padding-top:8px;
+  margin-bottom:0rem;
+  margin-top:0rem;
+  height: 40px;
+  
+}
+
+.satya{
+	color:#ffffff;
+	
+	letter-spacing: 0.1rem;
+	font-weight: 500;
+	font-family: 'Corbel Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: 1.3rem;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -178,19 +192,19 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #1f3a93 !important;
+  background-color: #0F9D58!important;
 }
 
 .text-primary {
-  color: #1f3a93 !important;
+  color: #0F9D58 !important;
 }
 
 
 
 a {
-  color: #1f3a93;
+  color: #0F9D58;
 }
 
 a:hover, a:focus, a:active {
-  color: #1e8bc3;
+  color: #1e824c;
 }
